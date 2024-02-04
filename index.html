@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+
+  <title>LavaLab Web Design</title>
+
+  <!-- imported Plus Jakarta Sans font for back and finish buttons-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- set up the integrations-navigation bar -->
+
+  <div class="integrations-navbar"></div>
+
+  <!-- Text element: Hive -->
+
+  <div class="hive-text">hive</div>
+
+  <!-- Profile image that is also a button -->
+
+  <button class="profile-image" onclick="alertRandomLady()">
+    <img src="Mask group.png" alt="Profile Image">
+  </button>
+
+  <!-- circle container which contains the circle background and also
+       the cirlce itself -->
+
+  <div class="circle-container">
+    <div class="circle-background"></div>
+  </div>
+ 
+  <!-- Connect your favorite tools text -->
+
+  <div class="connect-text-tools">Connect your favorite tools.</div>
+
+  <!-- set up the 8 containers that contain the 8 different companies and their
+       information including their names, images, and descriptions -->
+
+       <div class="connect-button-container connect-button-container1">
+        <div class="smaller-container">
+          <img src="image 66.png" alt="Description of the image" class="image1">
+          <div class="company-text">Figma</div>
+          <div class="additional-text">Stay up to date with your team’s latest designs</div>
+          <button id="connect-intro" class="connect-button" onclick="toggleConnection(this)">Connect</button>
+        </div>
+      </div>
+    
+      <div class="connect-button-container connect-button-container2">
+        <div class="smaller-container">
+          <img src="Group.png" alt="Description of the image" class="image2">
+          <div class="GoogleDrive-text">Google Drive</div>
+          <div class="additional-text">Access all of your documents and information.</div>
+          <button class="connect-button" onclick="toggleConnection(this)">Connect</button>
+    
+        </div>
+      </div>
+    
+      <div class="connect-button-container connect-button-container3">
+        <div class="smaller-container">
+          <img src="image 64.png" alt="Description of the image" class="image3">
+          <div class="company-text">Slack</div>
+          <div class="additional-text">Communicate seamlessly with your teammates.</div>
+          <button class="connect-button" onclick="toggleConnection(this)">Connect</button>
+        </div>
+      </div>
+    
+      <div class="connect-button-container connect-button-container4">
+        <div class="smaller-container">
+          <img src="image 65.png" alt="Description of the image" class="image4">
+          <div class="company-text">Notion</div>
+          <div class="additional-text">Sync all of your notes, team docs, and other important information.
+          </div>
+          <button class="connect-button" onclick="toggleConnection(this)">Connect</button>
+        </div>
+      </div>
+    
+      <div class="connect-button-container connect-button-container5">
+        <div class="smaller-container">
+          <img src="image 68.png" alt="Description of the image" class="image5">
+          <div class="company-text">Miro</div>
+          <div class="additional-text">Unlock the power of collaboration to distill insights from data.</div>
+          <button class="connect-button" onclick="toggleConnection(this)">Connect</button>
+        </div>
+      </div>
+    
+      <div class="connect-button-container connect-button-container6">
+        <div class="smaller-container">
+          <img src="image 67.png" alt="Description of the image" class="image6">
+          <div class="company-text">Airtable</div>
+          <div class="additional-text">Keep your data organized in a spreadsheet-database format.</div>
+          <button class="connect-button" onclick="toggleConnection(this)">Connect</button>
+        </div>
+      </div>
+    
+      <div class="connect-button-container connect-button-container7">
+        <div class="smaller-container">
+          <img src="image 69.png" alt="Description of the image" class="image7">
+          <div class="company-text">Confluence</div>
+          <div class="additional-text">Create content, collaborate on work, and organize and share information.</div>
+          <button class="connect-button" onclick="toggleConnection(this)">Connect</button>
+        </div>
+      </div>
+    
+      <div class="connect-button-container connect-button-container8">
+        <div class="smaller-container">
+          <img src="image 70.png" alt="Description of the image" class="image8">
+          <div class="company-text">Dovetail</div>
+          <div class="additional-text">Organize and tag your research in a collaborative platform.</div>
+          <button class="connect-button" onclick="toggleConnection(this)">Connect</button>
+        </div>
+      </div>
+    
+      <!-- set up the back button-->
+    
+      <button class="back-button" onclick="alertMessageBack()">
+        <span>Back</span>
+      </button>
+    
+      <!-- set up the finish button-->
+    
+      <button class="finish-button" onclick="alertMessage()">
+        <span>Finish</span>
+      </button>
+
+  <script src="script.js"></script>
+  
+</body>
+
+</html>

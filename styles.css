@@ -1,0 +1,371 @@
+/* utilize body to prevent horizontal scrolling/*/
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* top bar that holds the profile image and hive text word /*/
+
+.integrations-navbar {
+  top: 0px;
+  left: 0px;
+  width: 1512px;
+  height: 100px;
+  position: absolute;
+  border: 0 0 1px 0;
+  border-color: #EEEEEE;
+  background-color: #FFFFFF;
+  border-radius: 0 0 1px 1px;
+  border-style: solid;
+  border-bottom: 1px solid #EEEEEE;
+  box-sizing: border-box;
+}
+
+/* hive text component /*/
+
+.hive-text {
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 30px;
+  width: 61px;
+  height: 30px;
+  position: absolute;
+  top: 35px;
+  left: 72px;
+  color: #9731ff;
+}
+
+/* sets the properties for the profile image to also make it act like a button /*/
+
+.profile-image {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 26px;
+  left: 1344px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* limit how far the circle gradient can go down - essentially
+   a crop on the bottom
+/*/
+
+.circle-container {
+  width: 1512px;
+  height: 850px;
+  position: absolute;
+  top: 100px;
+  left: -30px;
+  overflow: hidden;
+}
+
+/* circle gradient that is used to make the background have a gradient
+/*/
+
+.circle-background {
+  width: 1765px;
+  height: 1700px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #f3daff, #ffffff);
+  position: absolute;
+  top: 491px;
+  left: 750px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* makes the text component for Connect your favorite tools /*/
+
+.connect-text-tools {
+  position: absolute;
+  width: 585px;
+  height: 77px;
+  top: 259px;
+  left: 71px;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 76.8px;
+}
+
+/* container that holds the connect button as well as the image of
+   the associated company and also the companies name and description
+/*/
+
+.connect-button-container {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 274.69px;
+  height: 158.22px;
+  border-radius: 8.9px;
+  border: 0.89px solid #C8C8C8;
+  background-color: #FEF9F8;
+  cursor: pointer;
+  Gap: 40px;
+}
+
+/* the follwing differentiates the 8 container classes
+   by putting them at different positions /*/
+
+.connect-button-container1 {
+  position: absolute;
+  top: 384px;
+  left: 71px;
+  cursor: pointer;
+}
+
+.connect-button-container2 {
+  position: absolute;
+  top: 384px;
+  left: 385.69px;
+}
+
+.connect-button-container3 {
+  position: absolute;
+  top: 384px;
+  left: 700.38px;
+}
+
+.connect-button-container4 {
+  position: absolute;
+  top: 384px;
+  left: 1015.07px;
+}
+
+.connect-button-container5 {
+  position: absolute;
+  top: 582.22px;
+  left: 71px;
+}
+
+.connect-button-container6 {
+  position: absolute;
+  top: 582.22px;
+  left: 385.69px;
+}
+
+.connect-button-container7 {
+  position: absolute;
+  top: 582.22px;
+  left: 700.38px;
+}
+
+.connect-button-container8 {
+  position: absolute;
+  top: 582.22px;
+  left: 1015.07px;
+}
+
+/* smaller container within the bigger container which serves as the
+   boundaries on which to place the images, connect button, and text description
+/*/
+
+.smaller-container {
+  width: 215.79px;
+  height: 92.27px;
+  position: absolute;
+  top: 28.92px;
+  left: 31.15px;
+  gap: 7.79px;
+  background-color: #FEF9F8;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* the following make the dimensions for them images for each container /*/
+
+.smaller-container img.image1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17.8px;
+  height: 26.7px;
+}
+
+.smaller-container img.image2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 29.92px;
+  height: 26.7px;
+
+}
+
+.smaller-container img.image3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26.7px;
+  height: 26.7px;
+}
+
+.smaller-container img.image4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26.7px;
+  height: 26.7px;
+}
+
+.smaller-container img.image5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26.7px;
+  height: 26.7px;
+}
+
+.smaller-container img.image6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26.7px;
+  height: 26.7px;
+}
+
+.smaller-container img.image7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27.81px;
+  height: 26.7px;
+}
+
+.smaller-container img.image8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26.7px;
+  height: 26.7px;
+}
+
+/* connect button that turns light green and into the word connected
+   when clicked and back to original if clicked again
+/*/
+
+.connect-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #000000;
+  background-color: #FFFFFF;
+  padding: 5px 20px;
+  width: 99px;
+  height: 24px;
+  border: 1px solid #C8C8C8;
+  border-radius: 5px;
+  cursor: pointer;
+  gap: 10px;
+  transition: background-color 0.3s, color 0.3s;
+  left: 113px;
+  z-index: 999;
+}
+
+/* default company format text which is used for all company names/*/
+
+.company-text {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 50px;
+  height: 20px;
+  font-family: 'Helvetica-medium', sans-serif;
+  font-weight: 400;
+  font-size: 17.8px;
+  line-height: 20.47px;
+  color: #000000
+}
+
+/* Google drive test only used for google drive because it extends 
+   far more than the other companies
+/*/
+.GoogleDrive-text {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 104px;
+  height: 20px;
+  font-family: 'Helvetica-medium', sans-serif;
+  font-weight: 400;
+  font-size: 17.8px;
+  line-height: 20.47px;
+  color: #000000
+}
+
+/* description of the companies /*/
+
+.additional-text {
+  position: absolute;
+  top: 62px;
+  left: 0;
+  width: 215.79px;
+  height: 30px;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 400;
+  font-size: 13.35px;
+  line-height: 15.35px;
+  color: #000000
+}
+
+/* all components to make the back button/*/
+
+.back-button {
+  position: absolute;
+  width: 112px;
+  height: 56px;
+  top: 848px;
+  left: 71px;
+  background-color: #FFFFFF;
+  color: #1A1225;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #C8C8C8;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: right;
+  gap: 9px;
+  padding: 0;
+  z-index: 999;
+}
+
+/* all components to make the finish button/*/
+
+.finish-button {
+  position: absolute;
+  width: 140px;
+  height: 56px;
+  top: 848px;
+  left: 207px;
+  background-color: #1A1225;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Plus Jakarta Sans', 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: right;
+  gap: 1px;
+  padding: 0;
+  z-index: 999;
+}
