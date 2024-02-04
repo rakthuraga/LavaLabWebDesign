@@ -10,7 +10,7 @@ body {
 .integrations-navbar {
   top: 0px;
   left: 0px;
-  width: 1512px;
+  width: 100%;
   height: 100px;
   position: absolute;
   border: 0 0 1px 0;
@@ -44,7 +44,7 @@ body {
   width: 48px;
   height: 48px;
   top: 26px;
-  left: 1344px;
+  left: calc(100% - 88px);
   margin: 0;
   padding: 0;
   border: none;
@@ -57,7 +57,7 @@ body {
 /*/
 
 .circle-container {
-  width: 1512px;
+  width: 105%;
   height: 850px;
   position: absolute;
   top: 100px;
@@ -69,13 +69,13 @@ body {
 /*/
 
 .circle-background {
-  width: 1765px;
-  height: 1700px;
+  width: 2150px;
+  height: 1790px;
   border-radius: 50%;
   background: radial-gradient(circle, #f3daff, #ffffff);
   position: absolute;
   top: 491px;
-  left: 750px;
+  left: 930px;
   transform: translate(-50%, -50%);
   z-index: -1;
 }
