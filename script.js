@@ -11,7 +11,7 @@ function toggleConnection(button) {
 }
 
 function alertMessage() {
-  alert("You cannot finish what you have not started.");
+  alert("Nah.");
 }
 
 function alertMessageBack() {
