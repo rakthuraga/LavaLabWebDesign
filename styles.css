@@ -72,7 +72,7 @@ body {
   width: 2150px;
   height: 1790px;
   border-radius: 50%;
-  background: radial-gradient(circle, #f3daff, #ffffff);
+  background: radial-gradient(circle, #f3daff, #ffffff 78%);
   position: absolute;
   top: 491px;
   left: 930px;
