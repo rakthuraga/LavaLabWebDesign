@@ -69,13 +69,13 @@ body {
 /*/
 
 .circle-background {
-  width: 2150px;
+  width: 2450px;
   height: 1790px;
   border-radius: 50%;
-  background: radial-gradient(circle, #f3daff, #ffffff 78%);
+  background: radial-gradient(circle, #f3daff, #ffffff 65%);
   position: absolute;
   top: 491px;
-  left: 930px;
+  left: 770px;
   transform: translate(-50%, -50%);
   z-index: -1;
 }
